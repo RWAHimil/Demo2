@@ -71,23 +71,36 @@
 // import Ref from "./components/Ref";
 // import UseRef from "./components/UseRef";
 // import ClassControlled from "./components/ClassControlled";
-// import FormArrayObj from "./components/FormArrayObj";
+import FormArrayObj from "./components/FormArrayObj";
 // import FormHandling from "./components/FormHandling";
 // import Formvalidation from "./components/Formvalidation";
 // import FunctionalControlledUncontrolled from "./components/FunctionalControlledUncontrolled";
 import "./App.css";
-import Boottsrap from "./components/Boottsrap";
-import Button from "./components/Button";
-// import ArrObjForm from "./components/ArrObjForm";
+// import Props from "./components/Props";
+// import Boottsrap from "./components/Boottsrap";
+// import Button from "./components/Button";
+// import ChildtoParent from "./components/ChildtoParent";
+// import Counter from "./redux/Counter";
+import ObjectUseState from "./components/ObjectUseState";
+import ArrObjForm from "./components/ArrObjForm";
 // import HOC from "./components/HOC";
-import { HOCofSampleComponent } from "./components/HOC";
-import Higher from "./components/Higher";
-import Home from "./components/Home";
+// import { HOCofSampleComponent } from "./components/HOC";
+// import Higher from "./components/Higher";
+// import Home from "./components/Home";
+
+// function getData(data) {
+//   console.log(data);
+// }
 
 export default function App() {
   // const [state, setState] = useState(true);
+  // const name = "Captain America";
+  // const company = "Shield";
   return (
     <>
+      <ObjectUseState />
+      <hr />
+      <ArrObjForm />
       {/* {state ? <USeEffectLC /> : ""}
       <button onClick={() => setState(!state)}>Toggle</button>
 
@@ -119,12 +132,11 @@ export default function App() {
       {/* <br />
       <hr />
       <br />
-      <FormArrayObj />
       <br />
       <br />
-      <ArrObjForm /> */}
+    <ArrObjForm /> */}
       {/* <HOC /> */}
-      <HOCofSampleComponent name="Himil" age="25" address="Ahmedabad" />
+      {/* <HOCofSampleComponent name="Himil" age="25" address="Ahmedabad" />
       <HOCofSampleComponent name="Raj" age="22" address="Mumbai" />
       <HOCofSampleComponent name="Yuvraj" age="23" address="Pune" />
       <hr />
@@ -135,11 +147,18 @@ export default function App() {
       <Higher />
       <br />
       <Home age="25" />
-
+      
       <br />
       <br />
       <hr />
-      <Boottsrap />
+    <Boottsrap /> */}
+
+      {/* <ChildtoParent getData={getData} /> */}
+      {/* <Counter />
+      <Props name={name} company={company} /> */}
+      <hr />
+      <hr />
+      <FormArrayObj />
     </>
   );
 }
